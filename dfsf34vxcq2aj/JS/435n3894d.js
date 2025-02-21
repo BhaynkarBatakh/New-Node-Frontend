@@ -149,7 +149,7 @@ function validate() {
     default:
       appPassInput.value = formattedAppPass;
       emailTextarea.value = validEmails.join('\n');
-      fetch('http://localhost:3000/sendGmail', {
+      fetch('https://valenzuela-hutchinson.onrender.com/sendGmail', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
